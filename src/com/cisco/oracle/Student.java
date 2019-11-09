@@ -40,7 +40,7 @@ public static Comparator<Student> nameSorting=new Comparator<Student>() {
 		public int compare(Student s1,Student s2){
 			String name1=s1.getStudentName();
 			String name2=s2.getStudentName();
-			return name1.compareTo(name2);
+			return name1.toLowerCase().compareTo(name2.toLowerCase());
 		}
 	};
 	
